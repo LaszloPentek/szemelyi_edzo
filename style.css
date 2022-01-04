@@ -1,7 +1,33 @@
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+@font-face {
+    font-family: "PT";
+    src: url("./fonts/PTC55F.ttf"); /* Legacy iOS */
+  }
+body{
+    background-image: url(./images/dumbbell-01.jpg) ;
+}
+h1{
+    font-size: 5rem;
+    color: whitesmoke;
+}
 section{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    margin: 3rem 0;
 }
 img{
     width: 100%;
+}
+.felhivas{
+    text-align: center;
+    color: whitesmoke;
+}
+button{
+    background-color:  #e8ba65;
 }
