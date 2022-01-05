@@ -7,12 +7,14 @@ html{
     padding: 0;
     box-sizing: inherit;
   }
+
 @font-face {
     font-family: "PT";
-    src: url("./fonts/PTC55F.ttf"); /* Legacy iOS */
+    src: url("./fonts/PTS76F.ttf"); /* Legacy iOS */
   }
 body{
     background-image: url(./images/dumbbell-01.jpg) ;
+    font-size: 2rem;
 }
 h1{
     font-size: 5rem;
@@ -24,10 +26,37 @@ section{
 img{
     width: 100%;
 }
+/*felhivás*/
+.felhivas h2{
+    color: #E1BA65;
+    font-size: 2.6rem;
+}
+.felhivas *{
+    padding-bottom: 2rem;
+}
+.felhivas p{
+    font-weight: 600;
+    font-size: 2.6rem;
+}
 .felhivas{
     text-align: center;
     color: whitesmoke;
 }
 button{
     background-color:  #e8ba65;
+}
+/*Flexbox*/
+.flexbox{
+    display: flex;
+}
+/*Képzés*/
+.kepzes h2{
+    background: #e8ba65;
+    text-align: center;
+    text-shadow: 2px 2px #bb8b40;
+    padding: 2rem 5rem;
+    color: white;
+}
+.kepzes .flexbox p{
+    color: white;
 }
