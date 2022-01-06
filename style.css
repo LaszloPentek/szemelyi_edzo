@@ -10,11 +10,15 @@ html{
 
 @font-face {
     font-family: "PT";
-    src: url("./fonts/PTS76F.ttf"); /* Legacy iOS */
+    src: url("./fonts/PTS76F.ttf"); 
   }
 body{
-    background-image: url(./images/dumbbell-01.jpg) ;
+    background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.4)), url(./images/dumbbell-01.jpg) ;
     font-size: 2rem;
+    max-width: 576px;
+    font-family: "PT Sans", sans-serif;
+    color: white
+    
 }
 h1{
     font-size: 5rem;
@@ -25,6 +29,7 @@ section{
 }
 img{
     width: 100%;
+    margin: 1rem 0;
 }
 /*felhivás*/
 .felhivas h2{
@@ -42,13 +47,18 @@ img{
     text-align: center;
     color: whitesmoke;
 }
-button{
-    background-color:  #e8ba65;
+
+/*Jelentkezés gomb*/
+.jelentkezes-gomb{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #e8ba65;
+    text-shadow: 2px 2px 5px #000;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
 }
-/*Flexbox*/
-.flexbox{
-    display: flex;
-}
+
 /*Képzés*/
 .kepzes h2{
     background: #e8ba65;
@@ -59,4 +69,40 @@ button{
 }
 .kepzes .flexbox p{
     color: white;
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    body{
+        max-width: 990px;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    body{
+        max-width: 1600px;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+    /*Flexbox*/
+    .flexbox{
+        display: flex;
+        font-size: 2.2rem;
+        align-items: center;
+    }
+    .flexbox div{
+        width: 50%;
+    }
+    .info .flexbox{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+    .info .flexbox div{
+        margin: 3rem 1rem;
+        height: 300px;
+    }
 }
