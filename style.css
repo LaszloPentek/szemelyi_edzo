@@ -17,7 +17,7 @@ body{
     font-size: 2rem;
     max-width: 576px;
     font-family: "PT Sans", sans-serif;
-    color: white
+    
     
 }
 h1{
@@ -58,7 +58,12 @@ img{
     border-radius: 1rem;
     font-size: 2.5rem;
 }
-
+.youtube-container{
+    width: 80vw;
+    height: 45vw;
+    max-width: 800px;
+    max-height: 450px;
+}
 /*Képzés*/
 .kepzes h2{
     background: #e8ba65;
@@ -70,9 +75,35 @@ img{
 .kepzes .flexbox p{
     color: white;
 }
-
-
-
+/*Mondanak*/
+.mondanak h2{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2rem 5rem;
+}
+.mondanak .flexbox{
+    background-color: white;
+}
+/*info*/
+.info h2{
+    background: #e8ba65;
+    text-align: center;
+    text-shadow: 2px 2px #bb8b40;
+    padding: 2rem 5rem;
+    color: white;
+}
+.info{
+    text-align: center;
+}
+.info img{
+    width: 20%;
+}
+.info-box{
+    background-color: rgba(114, 113, 113, 0.623);
+    color: white;
+    text-shadow: 2px 2px #000;
+    border-radius: 2rem;
+}
 
 @media screen and (max-width: 992px){
     body{
